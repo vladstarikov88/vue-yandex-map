@@ -4,6 +4,6 @@ dist/
 npm-debug.log
 yarn-error.log
 .idea/
-vue-yandex-maps.js
+st-yandex-maps.js
 .vscode/
 package-lock.json

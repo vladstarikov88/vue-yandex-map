@@ -288,9 +288,9 @@ export default {
     );
   },
   mounted() {
-    if (this.$attrs['map-link'] || this.$attrs.mapLink) throw new Error('Vue-yandex-maps: Attribute mapLink is not supported. Use settings.');
+    if (this.$attrs['map-link'] || this.$attrs.mapLink) throw new Error('st-yandex-maps: Attribute mapLink is not supported. Use settings.');
 
-    if (this.placemarks && this.placemarks.length) throw new Error('Vue-yandex-maps: Attribute placemarks is not supported. Use marker component.');
+    if (this.placemarks && this.placemarks.length) throw new Error('st-yandex-maps: Attribute placemarks is not supported. Use marker component.');
 
     this.mapObserver = new MutationObserver((() => {
       if (this.myMap.container) this.myMap.container.fitToViewport();

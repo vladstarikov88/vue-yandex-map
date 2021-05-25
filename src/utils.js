@@ -199,7 +199,7 @@ export function ymapLoader(settings = {}) {
   return new Promise((res, rej) => {
     if (window.ymaps) return res();
 
-    if (document.getElementById('vue-yandex-maps')) {
+    if (document.getElementById('st-yandex-maps')) {
       emitter.$on('scriptIsLoaded', res);
       return
     }
@@ -218,7 +218,7 @@ export function ymapLoader(settings = {}) {
     yandexMapScript.setAttribute('src', link);
     yandexMapScript.setAttribute('async', '');
     yandexMapScript.setAttribute('defer', '');
-    yandexMapScript.setAttribute('id', 'vue-yandex-maps');
+    yandexMapScript.setAttribute('id', 'st-yandex-maps');
     document.head.appendChild(yandexMapScript);
     emitter.scriptIsNotAttached = false;
     yandexMapScript.onload = () => {

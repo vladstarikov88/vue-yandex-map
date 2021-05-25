@@ -1,10 +1,10 @@
 {
-  "name": "vue-yandex-maps-st",
-  "version": "0.10.10-01",
+  "name": "st-yandex-maps",
+  "version": "0.10.12",
   "description": "Yandex Maps component for VueJS.",
-  "main": "dist/vue-yandex-maps.umd.js",
-  "module": "dist/vue-yandex-maps.esm.js",
-  "unpkg": "dist/vue-yandex-maps.min.js",
+  "main": "dist/st-yandex-maps.umd.js",
+  "module": "dist/st-yandex-maps.esm.js",
+  "unpkg": "dist/st-yandex-maps.min.js",
   "scripts": {
     "build": "rollup -c",
     "prepublish": "npm run build",

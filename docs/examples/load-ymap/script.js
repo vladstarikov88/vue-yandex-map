@@ -1,4 +1,4 @@
-import { loadYmap } from 'vue-yandex-maps';
+import { loadYmap } from 'st-yandex-maps';
 
 export default {
   async mounted() {

@@ -1,12 +1,12 @@
 
-# vue-yandex-maps
+# st-yandex-maps
 
-vue-yandex-maps is a plugin for vue.js that adds yandex-map custom element.
+st-yandex-maps is a plugin for vue.js that adds yandex-map custom element.
 
 # Install
 
 ```Bash
-npm install vue-yandex-maps --save
+npm install st-yandex-maps --save
 ```
 
 # Register component
@@ -25,12 +25,12 @@ const settings = { // you may define your apiKey, lang and version or skip this.
 ```
 ### Register globally
 ```JavaScript
-import YmapPlugin from 'vue-yandex-maps'
+import YmapPlugin from 'st-yandex-maps'
 Vue.use(YmapPlugin, settings)
 ```
 ### Or for a single instance
 ```JavaScript
-import { yandexMap, ymapMarker } from 'vue-yandex-maps'
+import { yandexMap, ymapMarker } from 'st-yandex-maps'
 new Vue({
   components: { yandexMap, ymapMarker }
 })
@@ -46,19 +46,19 @@ new Vue({
 
 ### Nuxt module
 
-Add `vue-yandex-maps/nuxt` to modules section of `nuxt.config.js`
+Add `st-yandex-maps/nuxt` to modules section of `nuxt.config.js`
 
 ```JavaScript
 {
   modules: [
-    ['vue-yandex-maps/nuxt', settings]
+    ['st-yandex-maps/nuxt', settings]
   ]
 }
 ```
 
 ### Direct include
 
-You can use the CDN: https://unpkg.com/vue-yandex-maps, `yandexMap` is exposed to `window` and will automatically install itself. It might be useful for [Code Pen](https://codepen.io/PNKBizz/pen/WMRwyM)
+You can use the CDN: https://unpkg.com/st-yandex-maps, `yandexMap` is exposed to `window` and will automatically install itself. It might be useful for [Code Pen](https://codepen.io/PNKBizz/pen/WMRwyM)
 
 ## Usage
 

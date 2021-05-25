@@ -6,7 +6,7 @@ module.exports = {
     locales: {
       '/': {
         selectText: 'Язык',
-        title: 'Vue-yandex-maps',
+        title: 'st-yandex-maps',
         description: 'Я.Карты для Vue JS',
         nav: [
           { text: 'Главная', link: '/' },
@@ -24,7 +24,7 @@ module.exports = {
       },
       '/en/': {
         selectText: 'Language',
-        title: 'Vue-yandex-maps',
+        title: 'st-yandex-maps',
         description: 'Yandex map component for Vue JS',
         nav: [
           { text: 'Main', link: '/en/' },
@@ -45,12 +45,12 @@ module.exports = {
   locales: {
     '/': {
       lang: 'ru-RU',
-      title: 'Vue-yandex-maps',
+      title: 'st-yandex-maps',
       description: 'Документация на русском'
     },
     '/en/': {
       lang: 'en-US',
-      title: 'Vue-yandex-maps',
+      title: 'st-yandex-maps',
       description: 'Documentation on english'
     }
   }

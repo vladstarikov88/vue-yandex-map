@@ -8,12 +8,12 @@ You can easily plug Yandex map in your project with this custom component and yo
 Using npm
 
 ```Bash
-npm install vue-yandex-maps
+npm install st-yandex-maps
 ```
 
 Using yarn
 ```Bash
-yarn add vue-yandex-maps
+yarn add st-yandex-maps
 ```
 
 After that you can define settings of component:
@@ -34,7 +34,7 @@ At this moment you can use these settings when you will be registration the comp
 
 ### Global
 ```JavaScript
-import YmapPlugin from 'vue-yandex-maps'
+import YmapPlugin from 'st-yandex-maps'
 
 Vue.use(YmapPlugin, settings)
 ```
@@ -42,7 +42,7 @@ Vue.use(YmapPlugin, settings)
 ### Local
 
 ```JavaScript
-import { yandexMap, ymapMarker } from 'vue-yandex-maps'
+import { yandexMap, ymapMarker } from 'st-yandex-maps'
 
 export default {
   components: { yandexMap, ymapMarker }
@@ -62,7 +62,7 @@ Add file `ymapPlugin.js` into `plugins` directory.
 
 ```JavaScript
 import Vue from 'vue'
-import YmapPlugin from 'vue-yandex-maps'
+import YmapPlugin from 'st-yandex-maps'
 
 const settings = { ... } // plugin settings
 
@@ -84,7 +84,7 @@ Add existed plugin in plugin section `nuxt.config.js`
 If you need to use global variable `ymaps` separately from map component (e.g. for geocoder), just import loader. You may to define settings (see above) and `debug` option (`false` by default). Note that loader function is asynchronous.  
 
 ```JavaScript
-import { loadYmap } from 'vue-yandex-maps'
+import { loadYmap } from 'st-yandex-maps'
 
 export default {
   async mounted() {
@@ -96,4 +96,4 @@ export default {
 
 ### CDN
 
-You can use plugin directly via link [https://unpkg.com/vue-yandex-maps](https://unpkg.com/vue-yandex-maps). The plugin will be install automatically if you use Vue JS. It could be useful when you use [Code Pen](https://codepen.io/PNKBizz/pen/WMRwyM)
+You can use plugin directly via link [https://unpkg.com/st-yandex-maps](https://unpkg.com/st-yandex-maps). The plugin will be install automatically if you use Vue JS. It could be useful when you use [Code Pen](https://codepen.io/PNKBizz/pen/WMRwyM)

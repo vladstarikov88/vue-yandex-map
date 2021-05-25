@@ -7,7 +7,7 @@
 Подключите компонент, используя ваш пакетный менеджер
 
 ```Bash
-npm install vue-yandex-maps
+npm install st-yandex-maps
 ```
 
 После этого вы можете определить настройки подключения компонента: [индивидуальный ключ АПИ](https://tech.yandex.ru/maps/doc/jsapi/2.1/dg/concepts/load-docpage/), [используемый язык](https://tech.yandex.ru/maps/doc/jsapi/2.1/dg/concepts/localization-docpage/), [порядок задания географических координат](https://tech.yandex.ru/maps/jsapi/doc/2.1/dg/concepts/load-docpage/#load__coordorder) и версия Я.Карт. Эти настройки являются опциональными, значения по умолчанию указаны ниже.
@@ -28,7 +28,7 @@ const settings = {
 ### Глобальная
 
 ```JavaScript
-import YmapPlugin from 'vue-yandex-maps'
+import YmapPlugin from 'st-yandex-maps'
 
 Vue.use(YmapPlugin, settings)
 ```
@@ -36,7 +36,7 @@ Vue.use(YmapPlugin, settings)
 ### Локальная
 
 ```JavaScript
-import { yandexMap, ymapMarker } from 'vue-yandex-maps'
+import { yandexMap, ymapMarker } from 'st-yandex-maps'
 
 export default {
   components: { yandexMap, ymapMarker }
@@ -56,7 +56,7 @@ export default {
 
 ```JavaScript
 import Vue from 'vue'
-import YmapPlugin from 'vue-yandex-maps'
+import YmapPlugin from 'st-yandex-maps'
 
 const settings = { ... } // настройки плагина
 
@@ -78,7 +78,7 @@ Vue.use(YmapPlugin, settings);
 Если вам нужно использовать глобальную переменную `ymaps` отдельно от компонента карт (геокодер и др.), просто импортируйте лоадер. Вы можете задать настройки, описанные выше, а также указать параметр `debug` (по умолчанию - `false`). Учтите, что функция загрузчика асинхронная. 
 
 ```JavaScript
-import { loadYmap } from 'vue-yandex-maps'
+import { loadYmap } from 'st-yandex-maps'
 
 export default {
   async mounted() {
@@ -90,4 +90,4 @@ export default {
 
 ### CDN
 
-Вы можете подключить плагин напрямую, используя ссылку [https://unpkg.com/vue-yandex-maps](https://unpkg.com/vue-yandex-maps). Установка будет произведена автоматически при обнаружении Vue JS. Это может быть полезно при использовании [Code Pen](https://codepen.io/PNKBizz/pen/WMRwyM)
+Вы можете подключить плагин напрямую, используя ссылку [https://unpkg.com/st-yandex-maps](https://unpkg.com/st-yandex-maps). Установка будет произведена автоматически при обнаружении Vue JS. Это может быть полезно при использовании [Code Pen](https://codepen.io/PNKBizz/pen/WMRwyM)

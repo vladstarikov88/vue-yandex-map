@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
-import ymapPlugin from '../../../dist/vue-yandex-maps';
+import ymapPlugin from '../../../dist/st-yandex-maps';
 
 Vue.config.productionTip = false
 Vue.use(ymapPlugin)

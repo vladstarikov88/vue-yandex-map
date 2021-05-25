@@ -7,7 +7,7 @@ export default [
   {
     input: 'src/index.js',
     output: {
-      name: 'vue-yandex-maps',
+      name: 'st-yandex-maps',
       file: pkg.module,
       format: 'es',
       exports: 'named',
@@ -22,7 +22,7 @@ export default [
   {
     input: 'src/index.js',
     output: {
-      name: 'vue-yandex-maps',
+      name: 'st-yandex-maps',
       file: pkg.main,
       format: 'umd',
       exports: 'named',
@@ -37,7 +37,7 @@ export default [
   {
     input: 'src/index.js',
     output: {
-      name: 'vue-yandex-maps',
+      name: 'st-yandex-maps',
       file: pkg.unpkg,
       format: 'iife',
       exports: 'named',
