@@ -140,10 +140,6 @@ export default {
       default: () => ({}),
     },
     showAllMarkers: Boolean,
-    geoObject: {
-      type: Object,
-      default: () => ({}),
-    },
   },
   computed: {
     coordinates() {
@@ -243,6 +239,9 @@ export default {
       });
       this.$emit('markers-was-delete', deletedMarkersIds);
     },
+    addObject(object) {
+      this.myMap.geoObjects.add(object);
+    }
   },
   watch: {
     coordinates(val) {
@@ -253,13 +252,6 @@ export default {
     },
     bounds(val) {
       if (this.myMap.setBounds) this.myMap.setBounds(val);
-    },
-    geoObject: {
-      handler(obj) {
-        console.log(this.myMap);
-        this.myMap.geoObjects.add(obj);
-      },
-      deep: true,
     },
   },
   render(h) {
