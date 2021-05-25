@@ -242,14 +242,16 @@ export default {
       this.$emit('markers-was-delete', deletedMarkersIds);
     },
     addObject(object) {
-      this.removeLastObject()
-      this.lastObject = Object.assign({}, object);
       this.myMap.geoObjects.add(object);
     },
-    removeLastObject() {
-      if (!this.lastObject) {
+    async replaceObject(object) {
+      if (this.lastObject) {
         this.myMap.geoObjects.remove(this.lastObject);
+        this.myMap.geoObjects.add(object);
+      } else {
+        this.myMap.geoObjects.add(object);
       }
+      this.lastObject = Object.assign({}, object);
     },
   },
   watch: {
