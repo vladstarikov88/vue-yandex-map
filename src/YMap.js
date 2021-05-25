@@ -57,6 +57,8 @@ export default {
       isReady: false,
       debounce: null,
       markers: [],
+
+      lastObject: null,
     };
   },
   props: {
@@ -240,8 +242,15 @@ export default {
       this.$emit('markers-was-delete', deletedMarkersIds);
     },
     addObject(object) {
+      this.removeLastObject()
+      this.lastObject = Object.assign({}, object);
       this.myMap.geoObjects.add(object);
-    }
+    },
+    removeLastObject() {
+      if (!this.lastObject) {
+        this.myMap.geoObjects.remove(this.lastObject);
+      }
+    },
   },
   watch: {
     coordinates(val) {
