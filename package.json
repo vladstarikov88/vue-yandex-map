@@ -1,6 +1,6 @@
 {
   "name": "vue-yandex-maps",
-  "version": "0.10.10",
+  "version": "0.10.10-01",
   "description": "Yandex Maps component for VueJS.",
   "main": "dist/vue-yandex-maps.umd.js",
   "module": "dist/vue-yandex-maps.esm.js",
@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/PNKBizz/vue-yandex-map.git"
+    "url": "https://github.com/vladstarikov88/vue-yandex-map"
   },
   "keywords": [
     "yandex-maps",
     "maps",
     "vue"
   ],
-  "author": "bizz.gc@gmail.com",
+  "author": "vlad.starikov.182@ya.ru",
   "license": "MIT",
   "devDependencies": {
     "@babel/cli": "^7.2.3",

@@ -239,6 +239,9 @@ export default {
       });
       this.$emit('markers-was-delete', deletedMarkersIds);
     },
+    addObject(object) {
+      this.myMap.geoObjects.add(object);
+    }
   },
   watch: {
     coordinates(val) {
